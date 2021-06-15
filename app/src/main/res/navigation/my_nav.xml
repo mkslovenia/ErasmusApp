@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/mainMenu2">
+
+    <fragment
+        android:id="@+id/weather"
+        android:name="pl.uat.ea.Weather"
+        android:label="fragment_weather"
+        tools:layout="@layout/fragment_weather" />
+    <fragment
+        android:id="@+id/news"
+        android:name="pl.uat.ea.News"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/tips"
+        android:name="pl.uat.ea.Tips"
+        android:label="fragment_tips"
+        tools:layout="@layout/fragment_tips" />
+    <fragment
+        android:id="@+id/QRMenu"
+        android:name="pl.uat.ea.QRMenu"
+        android:label="fragment_q_r_menu"
+        tools:layout="@layout/fragment_q_r_menu" />
+    <fragment
+        android:id="@+id/favPlaces"
+        android:name="pl.uat.ea.FavPlaces"
+        android:label="fragment_fav_places"
+        tools:layout="@layout/fragment_fav_places" />
+    <fragment
+        android:id="@+id/mainMenu2"
+        android:name="pl.uat.ea.MainMenu"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" />
+</navigation>

@@ -8,31 +8,47 @@
     <fragment
         android:id="@+id/weather"
         android:name="pl.uat.ea.Weather"
-        android:label="fragment_weather"
-        tools:layout="@layout/fragment_weather" />
+        android:label="Weather"
+        tools:layout="@layout/fragment_weather"/>
     <fragment
         android:id="@+id/news"
         android:name="pl.uat.ea.News"
-        android:label="fragment_news"
+        android:label="News"
         tools:layout="@layout/fragment_news" />
     <fragment
         android:id="@+id/tips"
         android:name="pl.uat.ea.Tips"
-        android:label="fragment_tips"
+        android:label="Tips"
         tools:layout="@layout/fragment_tips" />
     <fragment
         android:id="@+id/QRMenu"
         android:name="pl.uat.ea.QRMenu"
-        android:label="fragment_q_r_menu"
+        android:label="QRMenu"
         tools:layout="@layout/fragment_q_r_menu" />
     <fragment
         android:id="@+id/favPlaces"
         android:name="pl.uat.ea.FavPlaces"
-        android:label="fragment_fav_places"
+        android:label="Favourite Places"
         tools:layout="@layout/fragment_fav_places" />
     <fragment
         android:id="@+id/mainMenu2"
         android:name="pl.uat.ea.MainMenu"
-        android:label="fragment_main_menu"
-        tools:layout="@layout/fragment_main_menu" />
+        android:label="Main menu"
+        tools:layout="@layout/fragment_main_menu">
+        <action
+            android:id="@+id/action_mainMenu2_to_weather"
+            app:destination="@id/weather" />
+        <action
+            android:id="@+id/action_mainMenu2_to_tips"
+            app:destination="@id/tips" />
+        <action
+            android:id="@+id/action_mainMenu2_to_QRMenu"
+            app:destination="@id/QRMenu" />
+        <action
+            android:id="@+id/action_mainMenu2_to_news"
+            app:destination="@id/news" />
+        <action
+            android:id="@+id/action_mainMenu2_to_favPlaces"
+            app:destination="@id/favPlaces" />
+    </fragment>
 </navigation>

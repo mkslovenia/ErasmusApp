@@ -9,59 +9,57 @@ android:padding="24dp">
 
     <Button
         android:id="@+id/weatherButton"
-        android:layout_width="180dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="250dp"
-        android:background="#2196F3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="#2196F3"
         android:text="Weather"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/newsButton"
-        android:layout_width="180dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="15dp"
-        android:background="#2196F3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="#2196F3"
         android:text="News"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toEndOf="@+id/weatherButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tipsButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2196F3"
+        android:text="Tips"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/weatherButton" />
 
     <Button
-        android:id="@+id/tipsBbutton"
-        android:layout_width="180dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="15dp"
-        android:background="#2196F3"
-        android:text="Tips"
+        android:id="@+id/favPlacesButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2196F3"
+        android:text="Favourite places"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tipsButton"
         app:layout_constraintTop_toBottomOf="@+id/newsButton" />
 
     <Button
-        android:id="@+id/favPlacesButton"
-        android:layout_width="180dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="15dp"
-        android:background="#2196F3"
-        android:text="Favourtie places"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tipsBbutton" />
-
-    <Button
         android:id="@+id/QRMenuButton"
-        android:layout_width="180dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="15dp"
-        android:background="#2196F3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2196F3"
         android:text="QR Menu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/favPlacesButton" />
+        app:layout_constraintTop_toBottomOf="@+id/tipsButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

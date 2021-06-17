@@ -1,5 +1,6 @@
 package pl.uat.ea
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -38,7 +39,9 @@ class MainMenu : Fragment() {
         }
 
         qrmenuButton.setOnClickListener{
-            findNavController().navigate(R.id.action_mainMenu2_to_QRMenu)
+            //findNavController().navigate(R.id.action_mainMenu2_to_QRMenu)
+            val intent = Intent(context, QRMenu::class.java)
+            startActivity(intent)
         }
 
         favPlacesButton.setOnClickListener{

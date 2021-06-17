@@ -2,4 +2,9 @@
     <string name="app_name">Erasmus App</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="MainActivityClosed">Aplikacja zamknięta</string>
+    <string name="QRActivityClosed">Kod zaczytany</string>
+    <string name="noPermissionGrantedSorry">Uprawnienia nie zostały przyznane</string>
+    <string name="scanBarcode">Skanuj kod</string>
+    <string name="QRcodeActivityCancelled">Anulowanie skanowania</string>
 </resources>

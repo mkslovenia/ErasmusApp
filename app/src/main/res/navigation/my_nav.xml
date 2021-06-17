@@ -24,7 +24,11 @@
         android:id="@+id/QRMenu"
         android:name="pl.uat.ea.QRMenu"
         android:label="QRMenu"
-        tools:layout="@layout/fragment_q_r_menu" />
+        tools:layout="@layout/fragment_q_r_menu" >
+        <action
+            android:id="@+id/action_QRMenu_to_webView"
+            app:destination="@id/webView" />
+    </fragment>
     <fragment
         android:id="@+id/favPlaces"
         android:name="pl.uat.ea.FavPlaces"
@@ -51,4 +55,9 @@
             android:id="@+id/action_mainMenu2_to_favPlaces"
             app:destination="@id/favPlaces" />
     </fragment>
+    <fragment
+        android:id="@+id/webView"
+        android:name="pl.uat.ea.WebView"
+        android:label="fragment_web_view"
+        tools:layout="@layout/fragment_web_view" />
 </navigation>
